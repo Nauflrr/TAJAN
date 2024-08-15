@@ -1,0 +1,32 @@
+[17-Jun-2024 13:27:19 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'where clause' in /home/tajancl1/public_html/pta/ambildata/servobuka.php:10
+Stack trace:
+#0 /home/tajancl1/public_html/pta/ambildata/servobuka.php(10): mysqli->prepare()
+#1 {main}
+  thrown in /home/tajancl1/public_html/pta/ambildata/servobuka.php on line 10
+[17-Jun-2024 13:27:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'where clause' in /home/tajancl1/public_html/pta/ambildata/servobuka.php:10
+Stack trace:
+#0 /home/tajancl1/public_html/pta/ambildata/servobuka.php(10): mysqli->prepare()
+#1 {main}
+  thrown in /home/tajancl1/public_html/pta/ambildata/servobuka.php on line 10
+[17-Jun-2024 13:27:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'where clause' in /home/tajancl1/public_html/pta/ambildata/servobuka.php:10
+Stack trace:
+#0 /home/tajancl1/public_html/pta/ambildata/servobuka.php(10): mysqli->prepare()
+#1 {main}
+  thrown in /home/tajancl1/public_html/pta/ambildata/servobuka.php on line 10
+[17-Jun-2024 13:27:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'where clause' in /home/tajancl1/public_html/pta/ambildata/servobuka.php:10
+Stack trace:
+#0 /home/tajancl1/public_html/pta/ambildata/servobuka.php(10): mysqli->prepare()
+#1 {main}
+  thrown in /home/tajancl1/public_html/pta/ambildata/servobuka.php on line 10
+[12-Jul-2024 08:38:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Too many connections in /home/tajancl1/public_html/pta/ambildata/konekweb.php:3
+Stack trace:
+#0 /home/tajancl1/public_html/pta/ambildata/konekweb.php(3): mysqli_connect()
+#1 /home/tajancl1/public_html/pta/ambildata/servodiam.php(3): include('/home/tajancl1/...')
+#2 {main}
+  thrown in /home/tajancl1/public_html/pta/ambildata/konekweb.php on line 3
+[12-Jul-2024 08:38:32 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Too many connections in /home/tajancl1/public_html/pta/ambildata/konekweb.php:3
+Stack trace:
+#0 /home/tajancl1/public_html/pta/ambildata/konekweb.php(3): mysqli_connect()
+#1 /home/tajancl1/public_html/pta/ambildata/bacaservo.php(3): include('/home/tajancl1/...')
+#2 {main}
+  thrown in /home/tajancl1/public_html/pta/ambildata/konekweb.php on line 3
