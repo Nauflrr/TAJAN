@@ -1,0 +1,89 @@
+.card-fitur-feature-card {
+  box-shadow: 5px 5px 15px 0px #333333;
+}
+.card-fitur-icon {
+  fill: var(--dl-color-custom-primary1);
+  width: 30px;
+  height: 30px;
+  margin-right: var(--dl-space-space-oneandhalfunits);
+}
+.card-fitur-container {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.card-fitur-text {
+  color: var(--dl-color-gray-white);
+  font-weight: 600;
+  line-height: 28px;
+}
+.card-fitur-text1 {
+  color: var(--dl-color-gray-white);
+}
+.card-fitur-root-class-name {
+  width: 100%;
+  height: auto;
+}
+.card-fitur-root-class-name1 {
+  width: 100%;
+  height: auto;
+}
+.card-fitur-root-class-name2 {
+  width: 100%;
+  height: auto;
+}
+.card-fitur-root-class-name3 {
+  width: 100%;
+  height: auto;
+}
+.card-fitur-root-class-name4 {
+  width: 100%;
+  height: auto;
+}
+.card-fitur-root-class-name5 {
+  width: 100%;
+  height: auto;
+}
+.card-fitur-root-class-name6 {
+  width: 100%;
+  height: auto;
+}
+.card-fitur-root-class-name7 {
+  width: 100%;
+  height: auto;
+}
+.card-fitur-root-class-name8 {
+  width: 100%;
+  height: auto;
+}
+.card-fitur-root-class-name9 {
+  width: 100%;
+  height: auto;
+}
+.card-fitur-root-class-name10 {
+  width: 100%;
+  height: auto;
+}
+.card-fitur-root-class-name11 {
+  width: 100%;
+  height: auto;
+}
+@media(max-width: 420px) {
+  .card-fitur-icon {
+    width: 20px;
+    height: 20px;
+    max-width: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    min-height: 20px;
+  }
+  .card-fitur-container {
+    flex-direction: column;
+  }
+  .card-fitur-text1 {
+    text-align: left;
+    text-transform: capitalize;
+  }
+}
