@@ -1,0 +1,39 @@
+[29-Jul-2024 16:49:37 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 271
+[29-Jul-2024 16:49:37 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 271
+[29-Jul-2024 16:49:37 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 391
+[29-Jul-2024 16:49:37 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 391
+[29-Jul-2024 16:49:37 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 396
+[29-Jul-2024 16:49:37 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 396
+[29-Jul-2024 16:49:55 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 271
+[29-Jul-2024 16:49:55 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 271
+[29-Jul-2024 16:49:55 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 391
+[29-Jul-2024 16:49:55 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 391
+[29-Jul-2024 16:49:55 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 396
+[29-Jul-2024 16:49:55 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 396
+[29-Jul-2024 16:51:19 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 271
+[29-Jul-2024 16:51:19 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 271
+[29-Jul-2024 16:51:19 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 391
+[29-Jul-2024 16:51:19 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 391
+[29-Jul-2024 16:51:19 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 396
+[29-Jul-2024 16:51:19 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 396
+[29-Jul-2024 16:52:05 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 271
+[29-Jul-2024 16:52:05 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 271
+[29-Jul-2024 16:52:05 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 391
+[29-Jul-2024 16:52:05 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 391
+[29-Jul-2024 16:52:05 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 396
+[29-Jul-2024 16:52:05 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 396
+[29-Jul-2024 16:52:12 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 271
+[29-Jul-2024 16:52:12 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 271
+[29-Jul-2024 16:52:12 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 391
+[29-Jul-2024 16:52:12 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 391
+[29-Jul-2024 16:52:12 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 396
+[29-Jul-2024 16:52:12 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 396
+[29-Jul-2024 17:05:54 UTC] PHP Warning:  Undefined array key "userid" in /home/tajancl1/public_html/iot/bacadatauser.php on line 6
+[29-Jul-2024 17:05:54 UTC] PHP Warning:  Trying to access array offset on null in /home/tajancl1/public_html/iot/bacadatauser.php on line 11
+[29-Jul-2024 17:05:54 UTC] PHP Warning:  Trying to access array offset on null in /home/tajancl1/public_html/iot/bacadatauser.php on line 17
+[29-Jul-2024 17:05:54 UTC] PHP Warning:  Trying to access array offset on null in /home/tajancl1/public_html/iot/bacadatauser.php on line 23
+[29-Jul-2024 17:05:54 UTC] PHP Warning:  Trying to access array offset on null in /home/tajancl1/public_html/iot/bacadatauser.php on line 29
+[29-Jul-2024 17:05:54 UTC] PHP Warning:  Trying to access array offset on null in /home/tajancl1/public_html/iot/bacadatauser.php on line 35
+[29-Jul-2024 17:05:54 UTC] PHP Warning:  Undefined array key "uname" in /home/tajancl1/public_html/hpengguna.php on line 247
+[29-Jul-2024 17:05:54 UTC] PHP Warning:  Undefined variable $kode in /home/tajancl1/public_html/hpengguna.php on line 271
+[29-Jul-2024 17:05:54 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/tajancl1/public_html/hpengguna.php on line 271

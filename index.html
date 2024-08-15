@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TAJAN</title>
+    <meta property="og:title" content="TAJAN" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+        null
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header class="home-header">
+          <header
+            data-thq="thq-navbar"
+            class="home-navbar-interactive navbarContainer"
+          >
+            <span class="home-logo">TA JAN</span>
+            <div data-thq="thq-navbar-nav" class="home-desktop-menu">
+              <nav class="home-menu-navbar">
+                <a href="#home" class="home-home">
+                  <span class="Header home-text">home</span>
+                  <br />
+                </a>
+                <a href="#fitur" class="home-fitur Header">Fitur</a>
+                <a href="#kontak" class="home-kontak Header">Kontak</a>
+                <a href="#pertanyaan" class="home-faq">
+                  <span class="Header home-text02">Pertanyaan</span>
+                  <br />
+                </a>
+              </nav>
+              <a
+                href="loginpengguna.php"
+                class="home-login buttonSubmit Header"
+              >
+                Login
+              </a>
+              <a href="loginadmin.html" class="home-admin Header buttonSubmit">
+                Admin
+              </a>
+            </div>
+            <a
+              href="loginpengguna.php"
+              class="home-masukpengguna buttonSubmit"
+            >
+              Login
+            </a>
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="home-icon socialIcons">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+            <div
+              data-thq="thq-mobile-menu"
+              class="home-mobile-menu1 mobileMenu"
+            >
+              <div class="home-nav">
+                <div class="home-top">
+                  <span class="home-logo1">TA JAN</span>
+                  <div data-thq="thq-close-menu" class="home-close-menu">
+                    <svg viewBox="0 0 1024 1024" class="home-icon2 socialIcons">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="home-links">
+                  <a href="#home" class="home-nav1 bodySmall">Home</a>
+                  <a href="#fitur" class="home-nav2 bodySmall">Fitur</a>
+                  <a href="#kontak" class="home-nav3 bodySmall">Kontak</a>
+                  <a href="#pertanyaan" class="home-nav4 bodySmall">
+                    Pertanyaan
+                  </a>
+                </nav>
+                <div class="home-buttons">
+                  <a
+                    href="loginpengguna.php"
+                    autofocus="true"
+                    class="home-masuk-pengguna Header button"
+                  >
+                    <span>
+                      <span>masuk</span>
+                      <br />
+                    </span>
+                  </a>
+                  <a
+                    href="loginadmin.html"
+                    autofocus="true"
+                    class="home-masuk-admin Header button"
+                  >
+                    <span>
+                      <span>Admin</span>
+                      <br />
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </header>
+        </header>
+        <section class="home-hero">
+          <div id="home" class="home-hero1 heroContainer">
+            <div class="home-container1">
+              <h1 class="home-hero-heading">
+                <span>Selamat datang</span>
+                <br />
+                <span>di Mesin Pencacah</span>
+                <br />
+                <span class="home-text14">oTOMATIS UNTUK BANK SAMPAH</span>
+                <br class="home-text15" />
+                <span></span>
+              </h1>
+            </div>
+            <div class="home-btn-group">
+              <a
+                href="loginpengguna.php"
+                class="home-hero-button1 buttonSubmit"
+              >
+                Mulai Sekarang
+              </a>
+            </div>
+          </div>
+        </section>
+        <div class="home-deskripsi-alasan">
+          <div class="bannerContainer home-banner">
+            <h1 class="home-banner-heading">
+              Mengapa Memilih Mesin Pencacah Botol Plastik Kami?
+            </h1>
+            <span class="home-banner-sub-heading bodySmall">
+              <span>
+                Kami menyediakan mesin pencacah botol plastik yang dirancang
+                khusus untuk mengolah botol plastik ukuran 600ml dan 330ml.
+                Dengan menggunakan mesin kami, Anda dapat dengan mudah dan
+                efisien mencacah botol plastik menjadi serpihan kecil yang dapat
+                digunakan kembali dalam berbagai aplikasi.
+              </span>
+              <span>
+                <span></span>
+                <span></span>
+              </span>
+              <span>
+                <span></span>
+                <span></span>
+              </span>
+              <span>
+                <span></span>
+                <span></span>
+              </span>
+              <span>
+                <span></span>
+                <span></span>
+              </span>
+              <span>
+                <span></span>
+                <span></span>
+              </span>
+              <span>
+                <span></span>
+                <span></span>
+              </span>
+              <span>
+                <span></span>
+                <span></span>
+              </span>
+            </span>
+            <a
+              href="#pertanyaan"
+              class="home-pelajari-lebih-lanjut buttonSubmit"
+            >
+              Pertanyaan Umum
+            </a>
+          </div>
+        </div>
+        <div id="fitur" class="home-fitur1">
+          <h1 class="home-text39 bodyLarge">
+            <span>Fitur</span>
+            <br />
+          </h1>
+          <div class="home-container2">
+            <div
+              class="card-fitur-feature-card featuresCard card-fitur-root-class-name8"
+            >
+              <svg viewBox="0 0 1024 1024" class="card-fitur-icon">
+                <path
+                  d="M598 362q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM598 534q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM426 726q18 0 31 12t13 30-13 30-31 12-30-12-12-30 12-30 30-12zM426 362q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM598 874q20 0 20 22t-20 22q-22 0-22-22t22-22zM598 726q18 0 30 12t12 30-12 30-30 12-31-12-13-30 13-30 31-12zM896 576q22 0 22 22 0 20-22 20t-22-20q0-22 22-22zM768 214q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM768 384q18 0 30 12t12 30-12 31-30 13-30-13-12-31 12-30 30-12zM768 726q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM768 554q18 0 30 13t12 31-12 30-30 12-30-12-12-30 12-31 30-13zM426 534q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM426 298q-18 0-30-12t-12-30 12-30 30-12 31 12 13 30-13 30-31 12zM426 150q-20 0-20-22t20-22q22 0 22 22t-22 22zM426 874q22 0 22 22t-22 22q-20 0-20-22t20-22zM128 576q22 0 22 22 0 20-22 20t-22-20q0-22 22-22zM598 150q-22 0-22-22t22-22q20 0 20 22t-20 22zM598 298q-18 0-31-12t-13-30 13-30 31-12 30 12 12 30-12 30-30 12zM896 448q-22 0-22-22 0-20 22-20t22 20q0 22-22 22zM256 214q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM128 406q22 0 22 20 0 22-22 22t-22-22q0-20 22-20zM256 384q18 0 30 12t12 30-12 31-30 13-30-13-12-31 12-30 30-12zM256 726q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM256 554q18 0 30 13t12 31-12 30-30 12-30-12-12-30 12-31 30-13z"
+                ></path>
+              </svg>
+              <div class="card-fitur-container">
+                <h3 class="card-fitur-text heading3">
+                  <span>Pencacah Botol Plastik</span>
+                </h3>
+                <span class="card-fitur-text1 bodySmall">
+                  <span>Mencacah botol plastik ukuran 600ml dan 330ml</span>
+                </span>
+              </div>
+            </div>
+            <div
+              class="card-fitur-feature-card featuresCard card-fitur-root-class-name9"
+            >
+              <svg viewBox="0 0 1024 1024" class="card-fitur-icon">
+                <path
+                  d="M598 362q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM598 534q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM426 726q18 0 31 12t13 30-13 30-31 12-30-12-12-30 12-30 30-12zM426 362q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM598 874q20 0 20 22t-20 22q-22 0-22-22t22-22zM598 726q18 0 30 12t12 30-12 30-30 12-31-12-13-30 13-30 31-12zM896 576q22 0 22 22 0 20-22 20t-22-20q0-22 22-22zM768 214q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM768 384q18 0 30 12t12 30-12 31-30 13-30-13-12-31 12-30 30-12zM768 726q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM768 554q18 0 30 13t12 31-12 30-30 12-30-12-12-30 12-31 30-13zM426 534q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM426 298q-18 0-30-12t-12-30 12-30 30-12 31 12 13 30-13 30-31 12zM426 150q-20 0-20-22t20-22q22 0 22 22t-22 22zM426 874q22 0 22 22t-22 22q-20 0-20-22t20-22zM128 576q22 0 22 22 0 20-22 20t-22-20q0-22 22-22zM598 150q-22 0-22-22t22-22q20 0 20 22t-20 22zM598 298q-18 0-31-12t-13-30 13-30 31-12 30 12 12 30-12 30-30 12zM896 448q-22 0-22-22 0-20 22-20t22 20q0 22-22 22zM256 214q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM128 406q22 0 22 20 0 22-22 22t-22-22q0-20 22-20zM256 384q18 0 30 12t12 30-12 31-30 13-30-13-12-31 12-30 30-12zM256 726q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM256 554q18 0 30 13t12 31-12 30-30 12-30-12-12-30 12-31 30-13z"
+                ></path>
+              </svg>
+              <div class="card-fitur-container">
+                <h3 class="card-fitur-text heading3"><span>Poin</span></h3>
+                <span class="card-fitur-text1 bodySmall">
+                  <span>Mendapatkan poin dari botol plastik</span>
+                </span>
+              </div>
+            </div>
+            <div
+              class="card-fitur-feature-card featuresCard card-fitur-root-class-name10"
+            >
+              <svg viewBox="0 0 1024 1024" class="card-fitur-icon">
+                <path
+                  d="M598 362q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM598 534q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM426 726q18 0 31 12t13 30-13 30-31 12-30-12-12-30 12-30 30-12zM426 362q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM598 874q20 0 20 22t-20 22q-22 0-22-22t22-22zM598 726q18 0 30 12t12 30-12 30-30 12-31-12-13-30 13-30 31-12zM896 576q22 0 22 22 0 20-22 20t-22-20q0-22 22-22zM768 214q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM768 384q18 0 30 12t12 30-12 31-30 13-30-13-12-31 12-30 30-12zM768 726q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM768 554q18 0 30 13t12 31-12 30-30 12-30-12-12-30 12-31 30-13zM426 534q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM426 298q-18 0-30-12t-12-30 12-30 30-12 31 12 13 30-13 30-31 12zM426 150q-20 0-20-22t20-22q22 0 22 22t-22 22zM426 874q22 0 22 22t-22 22q-20 0-20-22t20-22zM128 576q22 0 22 22 0 20-22 20t-22-20q0-22 22-22zM598 150q-22 0-22-22t22-22q20 0 20 22t-20 22zM598 298q-18 0-31-12t-13-30 13-30 31-12 30 12 12 30-12 30-30 12zM896 448q-22 0-22-22 0-20 22-20t22 20q0 22-22 22zM256 214q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM128 406q22 0 22 20 0 22-22 22t-22-22q0-20 22-20zM256 384q18 0 30 12t12 30-12 31-30 13-30-13-12-31 12-30 30-12zM256 726q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM256 554q18 0 30 13t12 31-12 30-30 12-30-12-12-30 12-31 30-13z"
+                ></path>
+              </svg>
+              <div class="card-fitur-container">
+                <h3 class="card-fitur-text heading3">
+                  <span>Cepat &amp; Mudah Digunakan</span>
+                </h3>
+                <span class="card-fitur-text1 bodySmall">
+                  <span>
+                    Proses pencacahan botol plastik dilakukan dengan cepat
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div
+              class="card-fitur-feature-card featuresCard card-fitur-root-class-name11"
+            >
+              <svg viewBox="0 0 1024 1024" class="card-fitur-icon">
+                <path
+                  d="M598 362q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM598 534q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM426 726q18 0 31 12t13 30-13 30-31 12-30-12-12-30 12-30 30-12zM426 362q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM598 874q20 0 20 22t-20 22q-22 0-22-22t22-22zM598 726q18 0 30 12t12 30-12 30-30 12-31-12-13-30 13-30 31-12zM896 576q22 0 22 22 0 20-22 20t-22-20q0-22 22-22zM768 214q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM768 384q18 0 30 12t12 30-12 31-30 13-30-13-12-31 12-30 30-12zM768 726q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM768 554q18 0 30 13t12 31-12 30-30 12-30-12-12-30 12-31 30-13zM426 534q26 0 45 19t19 45-19 45-45 19-45-19-19-45 19-45 45-19zM426 298q-18 0-30-12t-12-30 12-30 30-12 31 12 13 30-13 30-31 12zM426 150q-20 0-20-22t20-22q22 0 22 22t-22 22zM426 874q22 0 22 22t-22 22q-20 0-20-22t20-22zM128 576q22 0 22 22 0 20-22 20t-22-20q0-22 22-22zM598 150q-22 0-22-22t22-22q20 0 20 22t-20 22zM598 298q-18 0-31-12t-13-30 13-30 31-12 30 12 12 30-12 30-30 12zM896 448q-22 0-22-22 0-20 22-20t22 20q0 22-22 22zM256 214q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM128 406q22 0 22 20 0 22-22 22t-22-22q0-20 22-20zM256 384q18 0 30 12t12 30-12 31-30 13-30-13-12-31 12-30 30-12zM256 726q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM256 554q18 0 30 13t12 31-12 30-30 12-30-12-12-30 12-31 30-13z"
+                ></path>
+              </svg>
+              <div class="card-fitur-container">
+                <h3 class="card-fitur-text heading3"><span>Website</span></h3>
+                <span class="card-fitur-text1 bodySmall">
+                  <span>
+                    Tersedia website untuk mengetahui poin yang telah diperoleh,
+                    dan pemantauan kapasitas tangki untuk admin
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-kontak1">
+          <div id="kontak" class="home-container3">
+            <h1 class="home-text42 bodyLarge">
+              <span>Kelompok Tugas Akhir</span>
+              <br />
+            </h1>
+            <span class="home-text45">Kode topik : MUK_5</span>
+            <div class="home-container4">
+              <a
+                href="https://www.instagram.com/javana_adhi"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link"
+              >
+                <div class="card-anggota-testimonial-card">
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="card-anggota-icon"
+                  >
+                    <path
+                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                    ></path>
+                  </svg>
+                  <div class="card-anggota-testimonial">
+                    <span class="card-anggota-text">
+                      <span>Javana Adhi Virlanda S.</span>
+                    </span>
+                    <span class="card-anggota-text1">
+                      <span>IoT System</span>
+                    </span>
+                    <img
+                      alt="profile"
+                      src="image/Javana.webp"
+                      class="card-anggota-image"
+                    />
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://instagram.com/nauflrr_"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link1"
+              >
+                <div class="card-anggota-testimonial-card">
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="card-anggota-icon"
+                  >
+                    <path
+                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                    ></path>
+                  </svg>
+                  <div class="card-anggota-testimonial">
+                    <span class="card-anggota-text">
+                      <span>Muhammad Naufal Rizal</span>
+                    </span>
+                    <span class="card-anggota-text1">
+                      <span>Website Dev</span>
+                    </span>
+                    <img
+                      alt="profile"
+                      src="image/Naufal.webp"
+                      class="card-anggota-image"
+                    />
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com/agungnaryana"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link2"
+              >
+                <div class="card-anggota-testimonial-card">
+                  <svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="card-anggota-icon"
+                  >
+                    <path
+                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                    ></path>
+                  </svg>
+                  <div class="card-anggota-testimonial">
+                    <span class="card-anggota-text">
+                      <span>I Gst A.A. Putra Naryana</span>
+                    </span>
+                    <span class="card-anggota-text1">
+                      <span>Mechatronic</span>
+                    </span>
+                    <img
+                      alt="profile"
+                      src="image/Putra.webp"
+                      class="card-anggota-image"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <h1 class="home-text46 bodyLarge">Kelompok Dosen Pembimbing</h1>
+            <div class="home-container5">
+              <a
+                href="https://instagram.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link3"
+              >
+                <div
+                  class="card-dosen-testimonial-card card-dosen-root-class-name"
+                >
+                  <div class="card-dosen-testimonial">
+                    <span class="card-dosen-text"><span>EKI</span></span>
+                    <span class="card-dosen-text1">
+                      <span>Ir. Ekki Kurniawan, M.T.</span>
+                    </span>
+                    <span class="card-dosen-text2">
+                      <span>DOSEN PEMBIMBING 1</span>
+                    </span>
+                    <img
+                      alt="profile"
+                      src="image/pakekki.webp"
+                      class="card-dosen-image"
+                    />
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com/irhammulkan/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link4"
+              >
+                <div
+                  class="card-dosen-testimonial-card card-dosen-root-class-name1"
+                >
+                  <div class="card-dosen-testimonial">
+                    <span class="card-dosen-text"><span>MUK</span></span>
+                    <span class="card-dosen-text1">
+                      <span>Irham Mulkan Rodiana, S.T., M.T.</span>
+                    </span>
+                    <span class="card-dosen-text2">
+                      <span>DOSEN PEMBIMBING 2</span>
+                    </span>
+                    <img
+                      alt="profile"
+                      src="image/pakirham.webp"
+                      class="card-dosen-image"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="pertanyaan" class="home-pertanyaan">
+          <span class="home-text47">Frequently Asked Questions</span>
+          <h1 class="home-text48 bodyLarge">
+            <span>Pertanyaan yang Sering Ditanyakan</span>
+            <br />
+          </h1>
+          <div class="home-container6">
+            <div class="faq1-feature-card FaqClass faq1-root-class-name8">
+              <svg viewBox="0 0 877.7142857142857 1024" class="faq1-icon">
+                <path
+                  d="M502.857 685.714v91.429c0 10.286-8 18.286-18.286 18.286h-91.429c-10.286 0-18.286-8-18.286-18.286v-91.429c0-10.286 8-18.286 18.286-18.286h91.429c10.286 0 18.286 8 18.286 18.286zM649.143 402.286c0 81.143-56.571 113.143-98.286 136.571-29.714 17.143-48 28-48 46.286v18.286c0 10.286-8 18.286-18.286 18.286h-91.429c-10.286 0-18.286-8-18.286-18.286v-38.857c0-70.286 50.286-92.571 90.857-110.857 34.286-16 55.429-26.857 55.429-52.571 0-33.143-41.714-57.714-79.429-57.714-20 0-41.143 6.286-54.286 15.429-12.571 8.571-24.571 21.143-45.714 47.429-3.429 4.571-8.571 6.857-14.286 6.857-4 0-8-1.143-10.857-3.429l-61.714-46.857c-7.429-5.714-9.143-16.571-4-24.571 46.857-73.714 112.571-109.714 199.429-109.714v0c93.714 0 198.857 74.286 198.857 173.714zM438.857 146.286c-201.714 0-365.714 164-365.714 365.714s164 365.714 365.714 365.714 365.714-164 365.714-365.714-164-365.714-365.714-365.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857v0c242.286 0 438.857 196.571 438.857 438.857z"
+                ></path>
+              </svg>
+              <h2 class="faq1-text">
+                <span>Bagaimana Cara Membuat Akun?</span>
+              </h2>
+              <span class="faq1-text1">
+                <span>
+                  Silahkan klik tombol login di atas halaman, lalu login
+                  menggunakan akun google anda
+                </span>
+              </span>
+            </div>
+            <div class="faq1-feature-card FaqClass faq1-root-class-name11">
+              <svg viewBox="0 0 877.7142857142857 1024" class="faq1-icon">
+                <path
+                  d="M502.857 685.714v91.429c0 10.286-8 18.286-18.286 18.286h-91.429c-10.286 0-18.286-8-18.286-18.286v-91.429c0-10.286 8-18.286 18.286-18.286h91.429c10.286 0 18.286 8 18.286 18.286zM649.143 402.286c0 81.143-56.571 113.143-98.286 136.571-29.714 17.143-48 28-48 46.286v18.286c0 10.286-8 18.286-18.286 18.286h-91.429c-10.286 0-18.286-8-18.286-18.286v-38.857c0-70.286 50.286-92.571 90.857-110.857 34.286-16 55.429-26.857 55.429-52.571 0-33.143-41.714-57.714-79.429-57.714-20 0-41.143 6.286-54.286 15.429-12.571 8.571-24.571 21.143-45.714 47.429-3.429 4.571-8.571 6.857-14.286 6.857-4 0-8-1.143-10.857-3.429l-61.714-46.857c-7.429-5.714-9.143-16.571-4-24.571 46.857-73.714 112.571-109.714 199.429-109.714v0c93.714 0 198.857 74.286 198.857 173.714zM438.857 146.286c-201.714 0-365.714 164-365.714 365.714s164 365.714 365.714 365.714 365.714-164 365.714-365.714-164-365.714-365.714-365.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857v0c242.286 0 438.857 196.571 438.857 438.857z"
+                ></path>
+              </svg>
+              <h2 class="faq1-text">
+                <span>Bagaimana cara menjalankan mesin?</span>
+              </h2>
+              <span class="faq1-text1">
+                <span>
+                  1. scan barcode pada mesin 2. buat akun / masuk dengan akun
+                  google 3. klik masukkan botol sekarang 4. mesin akan berjalan,
+                  5. keluarkan / logout akun setelah selesai menggunakan mesin.
+                </span>
+              </span>
+            </div>
+            <div class="faq1-feature-card FaqClass faq1-root-class-name9">
+              <svg viewBox="0 0 877.7142857142857 1024" class="faq1-icon">
+                <path
+                  d="M502.857 685.714v91.429c0 10.286-8 18.286-18.286 18.286h-91.429c-10.286 0-18.286-8-18.286-18.286v-91.429c0-10.286 8-18.286 18.286-18.286h91.429c10.286 0 18.286 8 18.286 18.286zM649.143 402.286c0 81.143-56.571 113.143-98.286 136.571-29.714 17.143-48 28-48 46.286v18.286c0 10.286-8 18.286-18.286 18.286h-91.429c-10.286 0-18.286-8-18.286-18.286v-38.857c0-70.286 50.286-92.571 90.857-110.857 34.286-16 55.429-26.857 55.429-52.571 0-33.143-41.714-57.714-79.429-57.714-20 0-41.143 6.286-54.286 15.429-12.571 8.571-24.571 21.143-45.714 47.429-3.429 4.571-8.571 6.857-14.286 6.857-4 0-8-1.143-10.857-3.429l-61.714-46.857c-7.429-5.714-9.143-16.571-4-24.571 46.857-73.714 112.571-109.714 199.429-109.714v0c93.714 0 198.857 74.286 198.857 173.714zM438.857 146.286c-201.714 0-365.714 164-365.714 365.714s164 365.714 365.714 365.714 365.714-164 365.714-365.714-164-365.714-365.714-365.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857v0c242.286 0 438.857 196.571 438.857 438.857z"
+                ></path>
+              </svg>
+              <h2 class="faq1-text">
+                <span>
+                  Berapa lama waktu yang dibutuhkan untuk mencacah satu botol
+                  plastik?
+                </span>
+              </h2>
+              <span class="faq1-text1">
+                <span>
+                  Waktu yang dibutuhkan untuk mencacah satu botol plastik adalah
+                  sekitar 25 detik.
+                </span>
+              </span>
+            </div>
+            <div class="faq1-feature-card FaqClass faq1-root-class-name10">
+              <svg viewBox="0 0 877.7142857142857 1024" class="faq1-icon">
+                <path
+                  d="M502.857 685.714v91.429c0 10.286-8 18.286-18.286 18.286h-91.429c-10.286 0-18.286-8-18.286-18.286v-91.429c0-10.286 8-18.286 18.286-18.286h91.429c10.286 0 18.286 8 18.286 18.286zM649.143 402.286c0 81.143-56.571 113.143-98.286 136.571-29.714 17.143-48 28-48 46.286v18.286c0 10.286-8 18.286-18.286 18.286h-91.429c-10.286 0-18.286-8-18.286-18.286v-38.857c0-70.286 50.286-92.571 90.857-110.857 34.286-16 55.429-26.857 55.429-52.571 0-33.143-41.714-57.714-79.429-57.714-20 0-41.143 6.286-54.286 15.429-12.571 8.571-24.571 21.143-45.714 47.429-3.429 4.571-8.571 6.857-14.286 6.857-4 0-8-1.143-10.857-3.429l-61.714-46.857c-7.429-5.714-9.143-16.571-4-24.571 46.857-73.714 112.571-109.714 199.429-109.714v0c93.714 0 198.857 74.286 198.857 173.714zM438.857 146.286c-201.714 0-365.714 164-365.714 365.714s164 365.714 365.714 365.714 365.714-164 365.714-365.714-164-365.714-365.714-365.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857v0c242.286 0 438.857 196.571 438.857 438.857z"
+                ></path>
+              </svg>
+              <h2 class="faq1-text">
+                <span>
+                  Apakah mesin ini dapat mencacah botol plastik ukuran selain
+                  600ml dan 330ml?
+                </span>
+              </h2>
+              <span class="faq1-text1">
+                <span>
+                  Tidak, mesin ini hanya dapat mencacah botol plastik ukuran
+                  600ml dan 330ml.
+                </span>
+              </span>
+            </div>
+            <div class="faq1-feature-card FaqClass faq1-root-class-name12">
+              <svg viewBox="0 0 877.7142857142857 1024" class="faq1-icon">
+                <path
+                  d="M502.857 685.714v91.429c0 10.286-8 18.286-18.286 18.286h-91.429c-10.286 0-18.286-8-18.286-18.286v-91.429c0-10.286 8-18.286 18.286-18.286h91.429c10.286 0 18.286 8 18.286 18.286zM649.143 402.286c0 81.143-56.571 113.143-98.286 136.571-29.714 17.143-48 28-48 46.286v18.286c0 10.286-8 18.286-18.286 18.286h-91.429c-10.286 0-18.286-8-18.286-18.286v-38.857c0-70.286 50.286-92.571 90.857-110.857 34.286-16 55.429-26.857 55.429-52.571 0-33.143-41.714-57.714-79.429-57.714-20 0-41.143 6.286-54.286 15.429-12.571 8.571-24.571 21.143-45.714 47.429-3.429 4.571-8.571 6.857-14.286 6.857-4 0-8-1.143-10.857-3.429l-61.714-46.857c-7.429-5.714-9.143-16.571-4-24.571 46.857-73.714 112.571-109.714 199.429-109.714v0c93.714 0 198.857 74.286 198.857 173.714zM438.857 146.286c-201.714 0-365.714 164-365.714 365.714s164 365.714 365.714 365.714 365.714-164 365.714-365.714-164-365.714-365.714-365.714zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857v0c242.286 0 438.857 196.571 438.857 438.857z"
+                ></path>
+              </svg>
+              <h2 class="faq1-text">
+                <span>Bagaimana jika terdapat kendala?</span>
+              </h2>
+              <span class="faq1-text1">
+                <span>Silahkan hubungi kontak tersedia</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <section class="home-footer">
+          <footer class="home-footer1 footerContainer">
+            <div class="home-container7">
+              <span class="home-logo2">TA JAN</span>
+            </div>
+            <a href="#home">
+              <svg viewBox="0 0 1024 1024" class="home-icon4 ScrollUpButton">
+                <path
+                  d="M0 512c0 282.77 229.23 512 512 512s512-229.23 512-512-229.23-512-512-512-512 229.23-512 512zM928 512c0 229.75-186.25 416-416 416s-416-186.25-416-416 186.25-416 416-416 416 186.25 416 416z"
+                ></path>
+                <path
+                  d="M706.744 669.256l90.512-90.512-285.256-285.254-285.254 285.256 90.508 90.508 194.746-194.744z"
+                ></path>
+              </svg>
+            </a>
+            <div class="home-separator"></div>
+            <div class="home-container8">
+              <span class="bodySmall home-text51">
+                ©2024 TA JAN, mESIN PENCACAH PLASTIK OTOMATIS UNTUK BANK SAMPAH.
+              </span>
+            </div>
+          </footer>
+        </section>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

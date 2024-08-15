@@ -1,0 +1,206 @@
+.loginpengguna-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-black);
+}
+.loginpengguna-pricing-card {
+  width: 518px;
+  height: 1003px;
+  position: relative;
+  background-color: #000000;
+}
+.loginpengguna-navlink {
+  color: rgb(252, 96, 54);
+  width: 57px;
+  font-size: 30px;
+  transition: 0.3s;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  text-decoration: none;
+  background-color: transparent;
+}
+.loginpengguna-navlink:hover {
+  color: var(--dl-color-gray-white);
+  animation-name: shakeX;
+  animation-delay: 0s;
+  background-color: rgba(0, 0, 0, 0.89);
+  animation-duration: 3000ms;
+  animation-direction: normal;
+  animation-iteration-count: 3;
+  animation-timing-function: ease;
+}
+.loginpengguna-navlink:active {
+  color: var(--dl-color-gray-white);
+}
+.loginpengguna-logo {
+  color: rgb(252, 96, 54);
+  font-size: 1em;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  transition: 0.3s;
+  font-family: "Cube";
+  font-weight: 800;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+.loginpengguna-logo:hover {
+  color: #fc6036;
+}
+.loginpengguna-kotak-daftar-google {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 71px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+}
+.loginpengguna-daftar-sekarang {
+  font-size: 12px;
+  align-self: center;
+  text-align: center;
+  font-family: "Courier New";
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+.loginpengguna-tombol-login-google {
+  color: var(--dl-color-custom-primary1);
+  width: 258px;
+  margin: 2px;
+  align-self: center;
+  text-align: center;
+  transition: 0.3s;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: var(--dl-color-custom-primary1);
+  border-style: groove;
+  border-width: 1px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-unit);
+  animation-name: pulse;
+  padding-bottom: var(--dl-space-space-halfunit);
+  animation-delay: 0s;
+  text-decoration: none;
+  background-color: var(--dl-color-gray-black);
+  animation-duration: 3000ms;
+  animation-direction: normal;
+  animation-iteration-count: 50;
+  animation-timing-function: ease;
+}
+.loginpengguna-tombol-login-google:hover {
+  color: var(--dl-color-gray-black);
+  background-color: var(--dl-color-custom-primary1);
+}
+.loginpengguna-tombol-login-google:active {
+  color: var(--dl-color-gray-black);
+  background-color: var(--dl-color-custom-primary1);
+}
+.loginpengguna-footer {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius4);
+  justify-content: center;
+  border-top-left-radius: var(--dl-radius-radius-round);
+  border-top-right-radius: var(--dl-radius-radius-round);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.loginpengguna-footer1 {
+  padding-top: var(--dl-space-space-fourunits);
+  border-color: var(--dl-color-custom-primary1);
+  border-style: groove;
+  border-width: 0px;
+  border-radius: var(--dl-radius-radius-radius40);
+  background-color: var(--dl-color-gray-black);
+  border-top-width: 2px;
+}
+.loginpengguna-container2 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.loginpengguna-logo1 {
+  width: auto;
+  font-size: 16px;
+  font-family: "Cube";
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.loginpengguna-separator {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 0px;
+  display: flex;
+  margin-top: var(--dl-space-space-twounits);
+  align-items: flex-start;
+  margin-left: 0px;
+  border-color: var(--dl-color-gray-900);
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 0px;
+  margin-bottom: var(--dl-space-space-twounits);
+  flex-direction: row;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+.loginpengguna-container3 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media(max-width: 420px) {
+  .loginpengguna-logo {
+    align-self: stretch;
+  }
+  .loginpengguna-kotak-daftar-google {
+    justify-content: space-between;
+  }
+  .loginpengguna-daftar-sekarang {
+    top: 326px;
+    left: 70px;
+    margin-bottom: var(--dl-space-space-halfunit);
+  }
+  .loginpengguna-footer1 {
+    padding: var(--dl-space-space-unit);
+    border-color: #fc6036;
+    border-style: double;
+    border-width: 0px;
+    background-color: var(--dl-color-gray-black);
+    border-top-width: 2px;
+  }
+  .loginpengguna-separator {
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .loginpengguna-container3 {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .loginpengguna-text {
+    text-align: center;
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+}
